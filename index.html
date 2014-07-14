@@ -27,6 +27,11 @@ require.async('mod1', function(Mod1){
 require.async('mod3', function(Mod3){
 	console.log(Mod3);
 });
+
+require.async(['mod1', 'mod2', 'mod3'], function(){
+	//加载完后 再执行
+	require.async('mod3');
+});
 </script>
 </head>
 
