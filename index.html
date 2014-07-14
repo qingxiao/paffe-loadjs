@@ -3,6 +3,19 @@
 <title>paffe loadjs test</title>
 <script src="lib/load.js"></script>
 <script>
+/**
+require解析顺序：
+rules => baseurl => map => domain 
+*/
+
+require.config.domain = ''; //配置domain
+//配置map表，为一个模块指定一个另外的请求url，map表和domain为最后解析的配置，只有在发出请求前被解析；
+require.config.map = {
+	'pkg/5_6.js': ['mod/mod5/mod5.js', 'mod/mod6/mod6.js']
+};
+
+require.config.baseurl = ''; //配置baseurl  如果某一个路径解析后完 是以/开头或者以http://开头的 则不会加baseurl
+
 //定义规则， 所有调用abc 以英文字母以及数字组成的的模块名 都被解析到 mod/abc/abc.js
 require.config.rules = [
 	[/^\w+$/, 'mod/$&/$&.js']
@@ -31,6 +44,10 @@ require.async('mod3', function(Mod3){
 require.async(['mod1', 'mod2', 'mod3'], function(){
 	//加载完后 再执行
 	require.async('mod3');
+});
+
+require.async('mod5', function(Mod5){
+	console.log(Mod5);
 });
 </script>
 </head>
