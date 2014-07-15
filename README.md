@@ -25,14 +25,14 @@ define('mod/mod1/mod1.js', function(require, exports, module){
 
 ```js
 define('mod/mod1/mod1.js', function(require, exports, module){
-    var jquery = require('mod/mod1/jquery.js');
+    var jquery = require('mod/jquery/jquery.js');
     
     module.exports = {
         name: 'mod1',
         desc: 'this is mod1',
         $: jquery
     };
-}, 'mod/mod1/jquery.js');
+}, 'mod/jquery/jquery.js');
 ```
 
 * **require.async(modname[, callback])**: 调用某一个模块， 多个modname则使用数组表示，callback为记载完所有的模块后执行的回调函数。
@@ -40,6 +40,17 @@ define('mod/mod1/mod1.js', function(require, exports, module){
 require.async('mod/mod1/mod1.js', function(Mod1){
     console.log(Mod1);
 });
+```
+
+* **require.config**: 配置全局。
+```js
+//配置domain参数，所有的请求发出时会自动带上domain参数
+require.config.domain = 'http://github.com/';
+
+//map表，用于将模块合并打包，表示包于各模块的对应关系，并当require某一个模块时，会自动发送请求至map的key值url上。
+require.config.map = {
+    'pkg/mod.js': ['mod/mod1/mod1.js', 'mod/jquery/jquery.js']
+};
 ```
 
 
