@@ -10,7 +10,7 @@ Paffe-loadjs是为[Paffe](http://github.com/jsyczhanghao/Paffe "基于fis打造�
 API
 ------------
 
-* **define**：定义一个模块
+define：定义一个模块
 
 ```js
 define('mod/mod1/mod1.js', function(require, exports, module){
