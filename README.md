@@ -4,7 +4,7 @@ Paffe-loadjs
 简介
 ------------
 
-Paffe-loadjs是为[Paffe](http://github.com/jsyczhanghao/Paffe "基于fis打造的一套定制版前端解决方案框架")提供一个前端模块化加载工具，遵循AMD规范，并提供require, define, require.async等相关接口，对js和css进行模块化管理，并可预设置模块的相关依赖进行模块依赖的并行加载，以提高前端的加载性能优化，且大小很小，整体代码包含注释不到300行左右。支持浏览器版本IE6+, firefox3.5+, chrome, safari, opera，除此之外，paffe-loadjs还支持css的加载，所有的解析规则于使用方式和加载js模块一致。
+Paffe-loadjs是为[Paffe](http://github.com/jsyczhanghao/Paffe "基于fis打造的一套定制版前端解决方案框架")提供一个前端模块化加载工具，提供require, define, require.async等相关接口，对js和css进行模块化管理，并可预设置模块的相关依赖进行模块依赖的并行加载，以提高前端的加载性能优化，且大小很小，整体代码包含注释不到300行左右。支持浏览器版本IE6+, firefox3.5+, chrome, safari, opera，除此之外，paffe-loadjs还支持css的加载，所有的解析规则于使用方式和加载js模块一致。
 
 
 API
