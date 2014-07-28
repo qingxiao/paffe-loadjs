@@ -7,11 +7,11 @@ PAF 前端模块化组件库
 
 
 ###插件列表
-* [Dialog](/jsyczhanghao/paffe-loadjs/mod/dialog)
-* [Tips](/jsyczhanghao/paffe-loadjs/mod/tips)
-* [Mask](/jsyczhanghao/paffe-loadjs/mod/mask)
-* [Alert](/jsyczhanghao/paffe-loadjs/mod/alert)
-* [Tabs](/jsyczhanghao/paffe-loadjs/mod/tabs)
-* [Template](/jsyczhanghao/paffe-loadjs/mod/template)
-* [FormValid](/jsyczhanghao/paffe-loadjs/mod/formValid)
-* [Util](/jsyczhanghao/paffe-loadjs/mod/util)
+* [Dialog](/mod/dialog)
+* [Tips](/mod/tips)
+* [Mask](/mod/mask)
+* [Alert](/mod/alert)
+* [Tabs](/mod/tabs)
+* [Template](/mod/template)
+* [FormValid](/mod/formValid)
+* [Util](/mod/util)
