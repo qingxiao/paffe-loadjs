@@ -1,3 +1,5 @@
+define('jquery', function(require, exports, module){
+
 var $ = require('jquery');
 
 function FormValid(opt){
@@ -57,3 +59,5 @@ FormValid.prototype = {
 };
 
 return FormValid;
+
+}, 'jquery');

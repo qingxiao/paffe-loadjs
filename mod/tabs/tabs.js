@@ -1,3 +1,5 @@
+define('tabs', function(require, exports, module){
+
 var $ = require('jquery');
 
 var tabs = function(opt){
@@ -58,3 +60,5 @@ tabs.prototype = {
 };
 
 return tabs;
+
+}, 'jquery');
