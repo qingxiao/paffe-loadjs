@@ -1,0 +1,75 @@
+.ui-dialog-container{
+	-moz-user-select: none;
+	position: fixed;
+    _position: absolute;
+	left: 0px;
+	top: 0px;
+    background: #fff;
+    z-index: 10000;
+    box-shadow: 0px 0px 5px 1px #000;
+    *border: 2px solid #ccc;
+    border: 2px solid #ccc\0;
+    padding: 2px 10px;
+    display: inline-block;
+    font-family: Helvetica Neue,Hiragino Sans GB,Microsoft Yahei,Simhei,sans-serif;
+}
+
+:root .ui-dialog-container{
+    border: 0px;
+}
+
+.ui-dialog-container a:hover{
+    text-decoration: none;
+}
+
+.ui-dialog-header{
+	border-bottom: 1px dashed #999;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+}
+
+.ui-dialog-close{
+    float: right;
+    color: #000;
+    font-size: 16px;
+}
+
+.ui-dialog-content{
+	padding: 10px 0px;
+    overflow: auto;
+    max-height: 520px;
+    min-width: 50px;
+}
+
+.ui-dialog-buttons{
+	text-align: center;
+    border-top: 1px dashed #999;
+}
+
+.ui-dialog-button{
+    cursor: pointer;
+    border: 0px;
+    margin: 20px 19px;
+    padding: 0px 10px;
+    border-radius: 2px;
+    background-color: #f5692f;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+}
+
+.ui-dialog-button:hover{
+    color: #fff;
+}
+
+
+.ui-dialog-button-disabled{
+    color: #ccc;
+    cursor: default;
+}

@@ -1,0 +1,7 @@
+.ui-formvalid-field-error{
+	background: url(./img/icon_tip.png) no-repeat 0px -6px;
+	display: inline-block;
+	line-height: 20px;
+	height: 20px;
+	padding-left: 23px;
+}
